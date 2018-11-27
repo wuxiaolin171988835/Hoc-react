@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <B />
+        <B name={"张三"} age={19} />
         <C />
       </div>
     );

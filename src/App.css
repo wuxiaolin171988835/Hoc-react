@@ -5,7 +5,7 @@
   width: 260px;
   height: 350px;
   border: 1px solid #cc4855;
-  display: inline-block;
+  float: left;
   margin-right: 40px;
 }
 .a-container .header {
@@ -15,6 +15,9 @@
   color: #fff;
   padding: 0 15px;
   box-sizing: border-box;
+}
+.a-container .content {
+  height: 310px;
 }
 .a-container .header div {
   display: inline-block;

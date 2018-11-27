@@ -42,3 +42,29 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+#在 creat-react-app 中使用装饰器（babel 版本 7.1.0,babel 官网 decorator）
+
+npm run eject
+
+安装相关插件：
+cnpm install --save-dev @babel/plugin-proposal-decorators
+
+跟目录下新建.babelrc
+{
+"presets": ["react-app"],(从 package.json 带过来)
+"plugins": [
+["@babel/plugin-proposal-decorators", { "legacy": true }],
+]
+}
+
+#用法：
+
+##使用高阶函数名称，并将普通组件作为函数传递进来 ##装饰器
+在普通组件 B 前面声明@高阶组件 A=====高阶组件 A（普通组件 B）
+@A=====A(B)
+
+#高阶组件应用：
+
+##代理方式：
+a、操作 props b、访问 ref c、抽取状态 d、包装组件
