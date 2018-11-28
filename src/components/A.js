@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+// 代理方式高阶组件
 const A = WrappedComponent => {
   return class A extends Component {
     constructor(props) {

@@ -66,5 +66,11 @@ cnpm install --save-dev @babel/plugin-proposal-decorators
 
 #高阶组件应用：
 
-##代理方式：
+##代理方式(推荐)：
+返回的新组件类直接继承自React.component类，新组件扮演的角色传入参数组件的一个代理，在新组件的render函数中，将被包裹组件渲染出来，除了高阶组件自己要做的工作，其余功能全都转手给了被包裹的组件
 a、操作 props b、访问 ref c、抽取状态 d、包装组件
+
+
+##继承方式：
+采用继承关联作为参数的组件和返回的组件，假如传入的组件参数是WrappedComponent，那么返回的组件就直接继承自WrappedComponent
+
