@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import Tabbar from "../components/Tabbar";
 @Tabbar
-class Home extends Component {
+class Pingou extends Component {
   render() {
     return (
       <div>
         <img
-          src={require("../static/images/home.jpeg")}
+          src={require("../static/images/pingou.jpeg")}
           className="bg"
-          alt="首页"
+          alt="拼购"
         />
       </div>
     );
   }
 }
-export default Home;
+
+export default Pingou;

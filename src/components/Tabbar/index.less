@@ -1,19 +1,24 @@
-.iconfont{
-  font-size: 28px!important;
+.iconfont {
+  font-size: 28px !important;
 }
-.tabbar{
+.content {
+  margin-bottom: 50px;
+}
+.tabbar {
   height: 50px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  border: 1px solid rgba(204, 204, 204,0.43);
+  border: 1px solid rgba(204, 204, 204, 0.43);
   padding: 5px 0;
-  &-content{
+  background-color: #fff;
+
+  &-content {
     display: flex;
   }
-  &-item{
+  &-item {
     flex: 1;
-    &.active{
+    &.active {
       color: red;
     }
   }

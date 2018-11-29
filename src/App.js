@@ -4,9 +4,8 @@ import "./App.css";
 // import C from "./components/C";
 // import E from "./components/E";
 // import F from "./components/F"
-import Tabbar from './components/Tabbar'
-import RouterMap from './router'
-
+// import Tabbar from "./components/Tabbar";
+import RouterMap from "./router";
 
 class App extends Component {
   render() {
